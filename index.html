@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Julia Web Sign-Up</title>
+  <link rel="stylesheet"  href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <section>
+      <div class="container">
+        <div class="user signinBx">
+          <div class="imgBx">
+          	<img src="img/look.jpg"/>
+          	</div>
+          <div class="formBx">
+            <form>
+              <h2>Sign Up</h2>
+        			<div class="input-container">
+        				
+        			<i class="fa fa-user icon"></i>
+              <input type="text" name="name" class="input-field" id="name" placeholder="Full Name" required/>
+              </div>
+              
+              <div class="input-container">
+             	<i class="fa fa-envelope icon"></i>
+              <input type="email" name="email" class="input-field" id="email" placeholder="Email" require/>
+             </div> 
+             
+             <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input type="password" name="password1" class="input-field" id="password1" placeholder="Password" required/>
+            	</div>
+            	
+            	<div class="input-container">
+            	<i class="fa fa-key icon"></i>
+              <input type="password" name="password2" class="input-field" id="password2" placeholder="Confirm Password" required/>
+              </div>
+              <!--code by VickeyStudios-->
+              <span id="message"></span>
+              
+              <input type="submit" value="Create" onclick="return Validate()"/>
+              
+              <p class="signup">
+                Already have an account?<a href="#" onclick="toggleForm();">
+                  Sign In
+                </a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

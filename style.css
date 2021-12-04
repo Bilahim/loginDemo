@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background:url('../img/mambo.jpg');
+	background-position: center center;
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .container {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.3);  
+  }
+}
+.container {
+  border-radius: 10px;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+.container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+.container .user .formBx form h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.container .user .formBx form input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  margin: 10px 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.container .user .formBx form input[type="submit"] {
+  max-width: 150px;
+  background: #9a7733;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  border: none;
+}
+.container .user .formBx form .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+ 	color: #000000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.container .user .formBx form .signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #00000;
+}
+::placeholder {
+	color: #fff;
+	opacity: 1;
+	padding-left: 5px;
+}
+input[type="text"]{
+	border: none;
+	border-bottom: 1.5px solid #000000;
+}
+input[type="email"]{
+	border: none;
+	border-bottom: 1.5px solid #000000;
+}
+input[type="password"]{
+	border: none;
+	border-bottom: 1.5px solid #000000;
+}
+.input-container{
+	display: flex;
+}
+.icon{
+	background: #000000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 15px;
+	min-width: 50px;
+	margin: 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+#message{
+	color: #fff;
+}
+@media (max-width: 768px) {
+  section .container {
+    max-width: 400px;
+  }
+  section .container .imgBx {
+    display: none;
+  }
+  section .container .user .formBx {
+    width: 100%;
+  }
+}
